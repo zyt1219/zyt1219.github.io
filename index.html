@@ -70,6 +70,13 @@
                 font-family: 楷体;
                 font-size: 20px; 
             }
+            .fourth1            
+            {
+                text-align: left;
+                color: rgb(10, 10, 10);
+                font-family: 楷体;
+                font-size: 18px; 
+            }
             div
             {
                 text-align:justify;
@@ -91,6 +98,13 @@
                 font-family: 楷体;
                 font-size: 20px;
             }  
+            .fifth1            
+            {
+                text-align: left;
+                color: rgb(10, 10, 10);
+                font-family: 楷体;
+                font-size: 18px; 
+            }
             div
             {
                 text-align:justify;
@@ -98,6 +112,20 @@
                 text-indent: 1cm;
                 font-size: 16px；
             } 
+            div
+            {
+                text-align:justify;
+                text-justify:inter-word;
+                text-indent: 1cm;
+                font-size: 16px；
+            }  
+            div
+            {
+                text-align:justify;
+                text-justify:inter-word;
+                text-indent: 1cm;
+                font-size: 16px；
+            }  
             div
             {
                 text-align:justify;
@@ -142,9 +170,12 @@
             <div class="fourth">
                 <h3>离散卷积</h3>
             </div>
+            <div class="fourth1">
+                    <h4>定义与理解</h4>
+                </div>
             <div>“离散卷积”是两个离散序列之间按照一定的规则将它们的有关序列值分别两两相乘再相加的一种特殊的运算。具体可用公式表示为:  
             </div>
-            <div style="text-align:center"><img src=" /photo/图片1.png"alt="H" width="150"></div>
+            <div style="text-align:center"><img src=" /photo/图片1.png"alt="H" width="200"></div>
             <div>图像解析：若以 x 为「自变量」，则  相当于把x（m）的图像左右翻转（这即是翻转的来源），然后再向右移动 。当 x(m) 和y(n-m)  重叠时，计算重叠部分的乘积，然后加和得到最终结果。这个加和的过程，放在连续函数的情景下，就是积分了。将这个过程，制作成动态图如下。
             </div>
 
@@ -153,19 +184,30 @@
         <div class="fifth">
                <h3>连续卷积</h3>
         </div>
+        <div class="fifth1">
+                <h4>定义与理解</h4>
         <div>我们称 (f*g)(n) 为 f,g 的卷积其连续的定义为：
         </div>
         <div style="text-align:center"><img src=" /photo/123.svg"alt="H" width="1000"></div>
-        <div>   定义的理解：如图，第一行分别代表两个函数f(t) 和g(t) 。将两个函数都用τ来表示，从而
+        <div>定义解释:如图，第一行分别代表两个函数f(t) 和g(t) 。将两个函数都用τ来表示，从而
                 得到了f(τ) 和g(τ) 。将函数g(τ) 关于τ=0翻转，得到g(−τ) ，然后将g(−τ) 平移t个单
                 位，得到g(t−τ)，对应第二行图像。由于t为非常数(实际上是时间变量)，当时间
                 变量(以下简称“时移”)取不同值时，g(t−τ) 能沿着τ轴“滑动“，第三四五行
                 可理解为“滑动”。让t从−∞滑动到+∞。两函数交会时，交会范围中两函数乘
                 积的积分值即为f(x)和g(x)的卷积。换句话说，计算一个滑动的的加权平均值。
-                也就是使用g(−τ)当做加权函数，来对f(τ)取加权平均值。    
-            </div>
-         <div style="text-align:center"><img src="/photo/3.png" alt="g" width="200"></div>
+                也就是使用g(−τ)当做加权函数，来对f(τ)取加权平均值。
+                </div>
+        <div style="text-align:center"><img src="/photo/3.png" alt="g" width="200"></div>
+        <div>图示两个方形脉冲波的卷积。其中函数”g”首先对τ=0翻转，接着平移”t”，成为g(t−τ) 。那么重叠部分的面积就相当于”t”
+                处的卷积，其中横坐标代表待变量τ以及新函数f∗g的自变量”t”                
+                </div>
         <div style="text-align:center"><img src="/photo/Convolution_of_box_signal_with_itself2.gif" alt="g" width="500"></div>
+        <div>图示方形脉冲波和指数衰退的脉冲波的卷积（后者可
+                能出现于RC电路中），同样地重叠部分面积就相当于
+                ”t”处的卷积。注意到因为”g”是对称的，所以在这两张
+                图中，反射并不会改变它的形状。
+                               
+                </div>
         <div style="text-align:center"><img src="/photo/Convolution_of_spiky_function_with_box2.gif" alt="h" width="500"></div>
         <html>
     </body>
