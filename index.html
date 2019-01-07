@@ -28,6 +28,41 @@
                 font-family: 楷体;
                 font-size: 22px; 
             }
+            .third1
+            {
+                text-align: left;
+                color: rgb(19, 19, 20);
+                font-family: 楷体;
+                font-size: 22px; 
+            }
+            div
+            {
+                text-align: left;
+                color: rgb(10, 10, 10);
+                font-family: 楷体;
+                font-size: 18px; 
+            }
+            div
+            {
+                text-align:justify;
+                text-justify:inter-word;
+                text-indent: 1cm;
+                font-size: 16px；
+            }     
+            div
+            {
+                text-align: left;
+                color: rgb(10, 10, 10);
+                font-family: 楷体;
+                font-size: 18px; 
+            }
+            div
+            {
+                text-align:justify;
+                text-justify:inter-word;
+                text-indent: 1cm;
+                font-size: 16px；
+            }     
             .fourth
             {
                 text-align: left;
@@ -70,12 +105,27 @@
             <div class="third">
                 <h3>卷积的实现过程</h3>
             </div>
+            <div class="third1">
+                <h3>初识卷积</h3>
+            </div>
+            <div>卷积的由来
+            </div>   
+            <div>   卷在这里对应英文的 convolve 这个单词，在卷积这个概念中，它的本意是「翻转」；
+                    积在这里对应乘积，因为卷积是通过两个函数/序列的乘积实现的；
+                    它真的是在「卷」——把多个乘积卷在一起变成一个值。
+            </div>
+            <div>卷积的实质
+            </div>   
+            <div>   数学角度：卷积实际上是一种积分运算，而且是线性运算(从离散角度理解),用来求两个曲线重叠区域的面积，可以看作加权求和。实际上积分就是极限求和。所以离散和连续并没有本质区别。
+                    信号角度：对信号进行滤波
+                    
+              </div>
             <div class="fourth">
                 <h4>离散卷积</h4>
             </div>
             <div>“离散卷积”是两个离散序列之间按照一定的规则将它们的有关序列值分别两两相乘再相加的一种特殊的运算。具体可用公式表示为:  
             </div>
-            <div style="text-align:center"><img src=" /photo/图片1.png"alt="H" width="100"></div>
+            <div style="text-align:center"><img src=" /photo/图片1.png"alt="H" width="150"></div>
             <div>图像解析：若以 x 为「自变量」，则  相当于把x（m）的图像左右翻转（这即是翻转的来源），然后再向右移动 。当 x(m) 和y(n-m)  重叠时，计算重叠部分的乘积，然后加和得到最终结果。这个加和的过程，放在连续函数的情景下，就是积分了。将这个过程，制作成动态图如下。
             </div>
 
